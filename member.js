@@ -1,0 +1,13 @@
+function skillsMember() {
+    return {
+        restrict: 'E',
+        templateUrl: 'views/skills/member.html',
+        scope: {
+            member: '='
+        }
+    };
+}
+
+angular
+    .module('skillsApp')
+    .directive('skillsMember', skillsMember);
